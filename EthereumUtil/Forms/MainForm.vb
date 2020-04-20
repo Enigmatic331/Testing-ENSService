@@ -25,13 +25,6 @@ Public Class MainForm
 
     End Sub
 
-    Public Function RemovePrefix(ByVal input As String) As String
-        If input.Substring(0, 2) = "0x" Then
-            input = input.Substring(2)
-        End If
-        Return input
-    End Function
-
     Private Sub btnExec_Click(sender As Object, e As EventArgs) Handles btnExec.Click
         Call testContract()
     End Sub
